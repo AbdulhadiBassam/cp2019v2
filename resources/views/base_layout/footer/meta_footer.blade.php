@@ -31,3 +31,7 @@
 <script src="{{asset('/control/assets/layouts/global/scripts/quick-sidebar.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('/control/assets/layouts/global/scripts/quick-nav.min.js')}}" type="text/javascript"></script>
 <!-- END THEME LAYOUT SCRIPTS -->
+{{--<script src="../assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>--}}
+<script src="{{asset('/control/assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('/control/assets/pages/scripts/ui-sweetalert.min.js')}}" type="text/javascript"></script>
+

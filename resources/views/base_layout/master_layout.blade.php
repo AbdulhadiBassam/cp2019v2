@@ -53,6 +53,15 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="page-content-wrapper">
             <!-- BEGIN CONTENT BODY -->
             <div class="page-content">
+                @if(session()->has('error'))
+                    <div class="alert alert-danger">
+                        {{session()->get('error')}}
+                    </div>
+                @elseif(session()->has('success'))
+                    <div class="alert alert-success">
+                        {{session()->get('success')}}
+                    </div>
+                @endif
                 @yield('body')
             </div>
             <!-- END CONTENT BODY -->
@@ -631,6 +640,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!--   استدعاء ملفات الـ footer-->
     @includeIf('base_layout.footer.meta_footer')
+@yield('script')
 
 </body>
 

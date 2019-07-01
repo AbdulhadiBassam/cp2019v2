@@ -5,11 +5,7 @@
 
     <div class="row">
 <div class="col-md-12">
-    @if(session()->has('success'))
-        <div class="alert alert-success">
-            {{session()->get('success')}}
-        </div>
-        @endif
+
 </div>
 
         <div class="col-md-3">
@@ -24,7 +20,7 @@
                                                                 <span class="btn red btn-outline btn-file">
                                                                     <span class="fileinput-new"> Select image </span>
                                                                     <span class="fileinput-exists"> Change </span>
-                                                                    <input type="file" name="image"> </span>
+                                                                    <input type="file" name="category_image"> </span>
                             <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
                         </div>
                         <span class="error">{{$errors ->first('image')}} </span>
@@ -46,7 +42,7 @@
                     </div>
                     <div class="form-cation">
                         <input type="submit" value="Save" class="btn btn-primary">
-                        <input type="reset" value="Cancel" class="btn btn-default">
+                        <a href="{{route('category.index')}}" class="btn btn-default"> cancel</a>
                     </div>
                 </div>
             </form>
